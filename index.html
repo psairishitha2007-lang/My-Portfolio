@@ -1,10 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of P Sai Rishitha Pradha - Web Developer">
+    <meta name="keywords" content="Portfolio, HTML, CSS, JavaScript, Web Developer">
+    <meta name="author" content="P Sai Rishitha Pradha">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="My Portfolio | P Sai Rishitha Pradha">
+    <meta property="og:description" content="Portfolio website of P Sai Rishitha Pradha">
+    <meta property="og:image" content="images/profile.jpeg.jpeg">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="My Portfolio | P Sai Rishitha Pradha">
+    <meta name="twitter:description" content="Portfolio website of P Sai Rishitha Pradha">
+    <meta name="twitter:image" content="images/profile.jpeg.jpeg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="images/favicon.jpeg">
+
     <title>My Portfolio | P SAI RISHITHA PRADHA</title>
 </head>
+
 <body>
 
 <!-- NAVIGATION -->
@@ -12,6 +35,7 @@
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
+    <a href="#video">Video</a>
     <a href="#contact">Contact</a>
 </nav>
 
@@ -25,13 +49,26 @@
 <!-- ABOUT SECTION -->
 <section id="about">
     <h2>About Me</h2>
-    <img src="images/profile.jpeg.jpeg" alt="Profile photo of P SAI RISHITHA PRADHA" width="200">
-    <p>I love building things on the web. Currently learning HTML, CSS, JavaScript, and React.</p>
+
+    <figure class="profile-figure">
+        <img src="images/profile.jpeg.jpeg"
+             alt="P Sai Rishitha Pradha profile photo"
+             width="300">
+
+        <figcaption>
+            P Sai Rishitha Pradha - Web Developer
+        </figcaption>
+    </figure>
+
+    <p>
+        I love building things on the web. Currently learning HTML, CSS, JavaScript, and React.
+    </p>
 </section>
 
 <!-- SKILLS SECTION -->
 <section id="skills">
     <h2>My Skills</h2>
+
     <ul>
         <li>HTML5</li>
         <li>CSS3</li>
@@ -43,6 +80,7 @@
 <!-- PROJECTS SECTION -->
 <section id="projects">
     <h2>My Projects</h2>
+
     <div class="project-card">
         <h3>Project 1</h3>
         <p>Description of project 1</p>
@@ -50,6 +88,20 @@
     </div>
 </section>
 
+<!-- VIDEO SECTION -->
+<section id="video">
+    <h2>Project Demo</h2>
+
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/ktoYUycRXTA"
+        title="YouTube video player"
+        frameborder="0"
+        allowfullscreen
+        sandbox="allow-same-origin allow-scripts">
+    </iframe>
+</section>
 <!-- CONTACT SECTION -->
 <section id="contact">
     <h2>Contact Me</h2>
@@ -116,57 +168,55 @@
 
         <h3>Your Skills</h3>
 
-<table border="1" cellpadding="8">
+        <table border="1" cellpadding="8">
+            <tr>
+                <th>Skill</th>
+                <th>Level</th>
+            </tr>
 
-<tr>
-    <th>Skill</th>
-    <th>Level</th>
-</tr>
+            <tr>
+                <td><input type="text" name="skill1" placeholder="Enter skill"></td>
+                <td>
+                    <select name="level1">
+                        <option>Beginner</option>
+                        <option>Intermediate</option>
+                        <option>Advanced</option>
+                    </select>
+                </td>
+            </tr>
 
-<tr>
-    <td>
-        <input type="text" name="skill1" placeholder="Enter skill">
-    </td>
-    <td>
-        <select name="level1">
-            <option>Beginner</option>
-            <option>Intermediate</option>
-            <option>Advanced</option>
-        </select>
-    </td>
-</tr>
+            <tr>
+                <td><input type="text" name="skill2" placeholder="Enter skill"></td>
+                <td>
+                    <select name="level2">
+                        <option>Beginner</option>
+                        <option>Intermediate</option>
+                        <option>Advanced</option>
+                    </select>
+                </td>
+            </tr>
 
-<tr>
-    <td>
-        <input type="text" name="skill2" placeholder="Enter skill">
-    </td>
-    <td>
-        <select name="level2">
-            <option>Beginner</option>
-            <option>Intermediate</option>
-            <option>Advanced</option>
-        </select>
-    </td>
-</tr>
+            <tr>
+                <td><input type="text" name="skill3" placeholder="Enter skill"></td>
+                <td>
+                    <select name="level3">
+                        <option>Beginner</option>
+                        <option>Intermediate</option>
+                        <option>Advanced</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
 
-<tr>
-    <td>
-        <input type="text" name="skill3" placeholder="Enter skill">
-    </td>
-    <td>
-        <select name="level3">
-            <option>Beginner</option>
-            <option>Intermediate</option>
-            <option>Advanced</option>
-        </select>
-    </td>
-</tr>
-
-</table>
         <br>
 
-        <button type="submit">Send Message 🚀</button>
-        <button type="reset">Clear Form</button>
+        <button type="submit" aria-label="Submit button">
+            Send Message 🚀
+        </button>
+
+        <button type="reset">
+            Clear Form
+        </button>
 
     </form>
 </section>
