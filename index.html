@@ -1,93 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P SAI RISHITHA PRADHA | Web Developer</title>
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Portfolio of P Sai Rishitha Pradha - Web Developer">
-    <meta name="keywords" content="Portfolio, HTML, CSS, JavaScript, Web Developer">
-    <meta name="author" content="P Sai Rishitha Pradha">
-
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="My Portfolio | P Sai Rishitha Pradha">
-    <meta property="og:description" content="Portfolio website of P Sai Rishitha Pradha">
+    <meta name="description" content="Portfolio of P SAI RISHITHA PRADHA, web developer">
+    <meta property="og:title" content="P SAI RISHITHA PRADHA | Web Developer">
     <meta property="og:image" content="images/profile.jpeg.jpeg">
-    <meta property="og:type" content="website">
 
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="My Portfolio | P Sai Rishitha Pradha">
-    <meta name="twitter:description" content="Portfolio website of P Sai Rishitha Pradha">
-    <meta name="twitter:image" content="images/profile.jpeg.jpeg">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="images/favicon.jpeg">
-
-    <title>My Portfolio | P SAI RISHITHA PRADHA</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
-<nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#video">Video</a>
-    <a href="#contact">Contact</a>
-</nav>
+<!-- HEADER + NAVIGATION -->
+<header class="site-header">
+    <nav class="navbar">
 
-<!-- HERO SECTION -->
-<header>
-    <h1>Hi, I'm P SAI RISHITHA PRADHA 👋</h1>
-    <p>I'm a passionate web developer from Bengaluru.</p>
-    <a href="#contact">Hire Me</a>
+        <div class="logo">PR</div>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- FOR DARK MODE -->
+        <button class="theme-toggle"
+                aria-label="Toggle Dark Mode"
+                title="Toggle Dark Mode">
+            🌙
+        </button>
+
+        <!-- Mobile Menu -->
+        <button class="menu-toggle"
+                aria-label="Toggle Navigation"
+                aria-expanded="false">
+            ☰
+        </button>
+
+    </nav>
 </header>
 
+<!-- MAIN CONTENT -->
+<main>
+
+<!-- HERO SECTION -->
+<section class="hero-section">
+
+    <h1>
+        Hi, I'm
+        <span class="highlight">
+            P SAI RISHITHA PRADHA
+        </span> 👋
+    </h1>
+
+    <p class="tagline">
+        I'm a passionate web developer from Bengaluru.
+    </p>
+
+    <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">
+            View my work
+        </a>
+
+        <a href="#contact" class="btn btn-secondary">
+            Contact Me
+        </a>
+    </div>
+
+</section>
+
 <!-- ABOUT SECTION -->
-<section id="about">
+<section id="about" class="about-section">
+
     <h2>About Me</h2>
 
-    <figure class="profile-figure">
-        <img src="images/profile.jpeg.jpeg"
-             alt="P Sai Rishitha Pradha profile photo"
-             width="300">
+    <div class="about-content">
 
-        <figcaption>
-            P Sai Rishitha Pradha - Web Developer
-        </figcaption>
-    </figure>
+        <figure class="profile-figure">
 
-    <p>
-        I love building things on the web. Currently learning HTML, CSS, JavaScript, and React.
-    </p>
+            <img src="images/profile.jpeg"
+                 alt="P SAI RISHITHA PRADHA profile photo"
+                 width="300">
+
+            <figcaption>
+                P SAI RISHITHA PRADHA — Web Developer
+            </figcaption>
+
+        </figure>
+
+        <div class="about-text">
+
+            <p>
+                I love building things on the web. Currently learning HTML,CSS,JavaScript, and React.
+            </p>
+
+        </div>
+
+    </div>
+
 </section>
 
 <!-- SKILLS SECTION -->
-<section id="skills">
+<section id="skills" class="skills-section">
+
     <h2>My Skills</h2>
 
-    <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-        <li>React</li>
-    </ul>
+    <div class="skills-grid">
+
+        <div class="skill-item" data-level="90">
+            HTML5
+        </div>
+
+        <div class="skill-item" data-level="80">
+            CSS3
+        </div>
+
+        <div class="skill-item" data-level="75">
+            JavaScript
+        </div>
+
+        <div class="skill-item" data-level="65">
+            React
+        </div>
+
+    </div>
+
 </section>
 
 <!-- PROJECTS SECTION -->
-<section id="projects">
+<section id="projects" class="projects-section">
+
     <h2>My Projects</h2>
 
-    <div class="project-card">
-        <h3>Project 1</h3>
-        <p>Description of project 1</p>
-        <a href="#">View Project</a>
-    </div>
-</section>
+    <div class="project-filters">
 
+        <button class="filter-btn active"
+                data-filter="all">
+            All
+        </button>
+
+        <button class="filter-btn"
+                data-filter="web">
+            Web
+        </button>
+
+        <button class="filter-btn"
+                data-filter="design">
+            Design
+        </button>
+
+    </div>
+
+    <div class="projects-grid">
+
+        <article class="project-card"
+                 data-category="web">
+
+            <img src="images/weathericon.jpeg"
+                 alt="Weather App screenshot"
+                 width="100">
+
+            <div class="project-card-body">
+
+                <h3>Weather App</h3>
+
+                <p>
+                    Real-time weather dashboard using OpenWeather API
+                </p>
+
+                <div class="project-tags">
+
+                    <span class="tag">React</span>
+                    <span class="tag">API</span>
+
+                </div>
+
+                <a href="#" class="btn">
+                    Live Demo
+                </a>
+
+                <a href="#" class="btn">
+                    GitHub
+                </a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
 <!-- VIDEO SECTION -->
 <section id="video">
     <h2>Project Demo</h2>
@@ -102,129 +210,137 @@
         sandbox="allow-same-origin allow-scripts">
     </iframe>
 </section>
+
 <!-- CONTACT SECTION -->
-<section id="contact">
-    <h2>Contact Me</h2>
+<section id="contact" class="contact-section">
+
+    <h2>Get In Touch</h2>
+
     <p>Have a project in mind? Let's talk!</p>
 
-    <form action="#" method="POST">
+   <!-- Complete Form Example -->
+<form action="/submit" method="POST">
+ 
+    <!-- Text Input -->
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="John Doe" required>
+ 
+    <!-- Email Input -->
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+<!-- Password Input -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" minlength="8">
+ 
+    <!-- Number Input -->
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="18" max="100">
 
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name"
-               placeholder="Enter your name" required>
+<!-- Radio Buttons (choose ONE) -->
+    <p>Experience Level:</p>
+    <input type="radio" id="beginner" name="level" value="beginner">
+    <label for="beginner">Beginner</label>
+    <input type="radio" id="intermediate" name="level" value="intermediate">
+    <label for="intermediate">Intermediate</label>
+ 
+    <!-- Checkboxes (choose MANY) -->
+    <p>Technologies:</p>
+    <input type="checkbox" id="html" name="tech" value="html">
+    <label for="html">HTML</label>
+    <input type="checkbox" id="css" name="tech" value="css">
+    <label for="css">CSS</label>
+ 
+<!-- Dropdown Select -->
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+        <option value="">-- Choose Country --</option>
+        <option value="in">India</option>
+        <option value="us">United States</option>
+        <option value="uk">United Kingdom</option>
+    </select>
+    
+    <!-- Textarea (multi-line text) -->
+    <label for="message">Your Message:</label>
+    <textarea id="message" name="message" rows="5" placeholder="Type here..."></textarea>
+ 
+ <!-- File Upload -->
+    <label for="resume">Upload Resume:</label>
+    <input type="file" id="resume" name="resume" accept=".pdf,.doc">
+ 
+    <!-- Date Picker -->
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob">
 
-        <label for="email">Your Email</label>
-        <input type="email" id="email" name="email"
-               placeholder="Enter your email" required>
+    <h3>Your Skills</h3>
 
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password"
-               placeholder="Enter your password" minlength="8">
+<table border="1" cellpadding="8">
+    <tr>
+        <th>Skill</th>
+        <th>Level</th>
+    </tr>
 
-        <label for="age">Age</label>
-        <input type="number" id="age" name="age" min="18" max="100">
+    <tr>
+        <td><input type="text" name="skill1" placeholder="Enter skill"></td>
+        <td>
+            <select name="level1">
+                <option>Beginner</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
+            </select>
+        </td>
+    </tr>
 
-        <p>Experience Level:</p>
+    <tr>
+        <td><input type="text" name="skill2" placeholder="Enter skill"></td>
+        <td>
+            <select name="level2">
+                <option>Beginner</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
+            </select>
+        </td>
+    </tr>
 
-        <input type="radio" id="beginner" name="level" value="beginner">
-        <label for="beginner">Beginner</label>
+    <tr>
+        <td><input type="text" name="skill3" placeholder="Enter skill"></td>
+        <td>
+            <select name="level3">
+                <option>Beginner</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
+            </select>
+        </td>
+    </tr>
+</table>
+ 
+    <!-- Submit Button -->
+    <button type="submit">Send Message</button>
+    <button type="reset">Clear Form</button>
 
-        <input type="radio" id="intermediate" name="level" value="intermediate">
-        <label for="intermediate">Intermediate</label>
+</form>
 
-        <p>Technologies:</p>
-
-        <input type="checkbox" id="html" name="tech" value="html">
-        <label for="html">HTML</label>
-
-        <input type="checkbox" id="css" name="tech" value="css">
-        <label for="css">CSS</label>
-
-        <label for="country">Country</label>
-        <select id="country" name="country">
-            <option value="">-- Choose Country --</option>
-            <option value="in">India</option>
-            <option value="us">United States</option>
-            <option value="uk">United Kingdom</option>
-        </select>
-
-        <label for="subject">Subject</label>
-        <select id="subject" name="subject">
-            <option value="">-- Select a topic --</option>
-            <option value="hire">I want to hire you</option>
-            <option value="collab">I want to collaborate</option>
-            <option value="other">Other</option>
-        </select>
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5"
-                  placeholder="Tell me about your project..." required></textarea>
-
-        <label for="resume">Upload Resume</label>
-        <input type="file" id="resume" name="resume" accept=".pdf,.doc">
-
-        <label for="dob">Date of Birth</label>
-        <input type="date" id="dob" name="dob">
-
-        <h3>Your Skills</h3>
-
-        <table border="1" cellpadding="8">
-            <tr>
-                <th>Skill</th>
-                <th>Level</th>
-            </tr>
-
-            <tr>
-                <td><input type="text" name="skill1" placeholder="Enter skill"></td>
-                <td>
-                    <select name="level1">
-                        <option>Beginner</option>
-                        <option>Intermediate</option>
-                        <option>Advanced</option>
-                    </select>
-                </td>
-            </tr>
-
-            <tr>
-                <td><input type="text" name="skill2" placeholder="Enter skill"></td>
-                <td>
-                    <select name="level2">
-                        <option>Beginner</option>
-                        <option>Intermediate</option>
-                        <option>Advanced</option>
-                    </select>
-                </td>
-            </tr>
-
-            <tr>
-                <td><input type="text" name="skill3" placeholder="Enter skill"></td>
-                <td>
-                    <select name="level3">
-                        <option>Beginner</option>
-                        <option>Intermediate</option>
-                        <option>Advanced</option>
-                    </select>
-                </td>
-            </tr>
-        </table>
-
-        <br>
-
-        <button type="submit" aria-label="Submit button">
-            Send Message 🚀
-        </button>
-
-        <button type="reset">
-            Clear Form
-        </button>
-
-    </form>
 </section>
 
+</main>
+
 <!-- FOOTER -->
-<footer>
-    <p>&copy; 2026 P Sai Rishitha Pradha. All rights reserved.</p>
+<footer class="site-footer">
+
+    <p>
+        &copy; <span class="footer-year">2026</span>
+        P SAI RISHITHA PRADHA.
+        Built with HTML, CSS & ❤️
+    </p>
+
+    <nav aria-label="Social links">
+        <a href="https://github.com/johndoe" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/johndoe" target="_blank">LinkedIn</a>
+    </nav>
+
 </footer>
+
+<!-- JavaScript will go here from Day 8! -->
+<script src="script.js"></script>
 
 </body>
 </html>
